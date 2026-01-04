@@ -1,0 +1,14 @@
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        self.balance -= amount
+
+my_account = BankAccount(15)
+my_account.deposit(100)
+my_account.withdraw(50)
+print(f"Final balance: {my_account.balance}")
